@@ -1,23 +1,36 @@
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-header class ="ion-no-border">
+  <ion-toolbar>
+    
+  </ion-toolbar>
+</ion-header>
 
-  <div id="background-container">
-    <!-- Your form and other content goes here -->
-    <ion-img class="background-image" src="../assets/images/purple.jpg"></ion-img>
-    <div id="form-container">
-      <!-- Your form goes here -->
-    </div>
-  </div>
+<ion-content>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-    <ion-button shape="round" [routerLink]="['/weather']" routerDirection="forward">weather</ion-button>
-  </div>
+  <ion-card>
+    <ion-img src="../assets/images/header.png"></ion-img>
+    <ion-card-header>
+      <ion-card-title>
+        <ion-card-subtitle>
+          Welcome to World Wide Weather
+        </ion-card-subtitle>
+      </ion-card-title>
+    </ion-card-header>
 
+    <ion-card-content>
+      <div class="signin-btns">
+        <ion-button fill="solid" shape="round" class="loginbtn">Login</ion-button>
+        <ion-button fill="outline" shape="round" color="dark">Signin</ion-button>
+      </div>
+
+      <div class="text-tag">
+
+      </div>
+
+      <div class="signin-btns">
+        <ion-button fill="solid" shape="round" class="loginbtn">Login</ion-button>
+        <ion-button fill="outline" shape="round" color="dark">Signin</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
   
 </ion-content>

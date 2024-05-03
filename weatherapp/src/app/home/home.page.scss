@@ -1,27 +1,31 @@
-#container {
-  text-align: center;
+ion-content{
+    --ion-background-color: #E1EAF9;
+    text-align: center;
+}
 
+ion-header{
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-toolbar{
+  --ion-background-color: transparent;
+  --opacity:0;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.signin-btns{
+  margin-top: 25px;
+  text-align: center;
+  color:#F0F4FA;
 }
 
-#container a {
-  text-decoration: none;
+.loginbtn{
+  --ion-color-primary: #215AB7;
+}
+
+.text-tag{
+  margin-top: 35px;
+  text-align: center;
+  span{
+    font-size: 13px;
+  }
 }
