@@ -11,7 +11,7 @@ import { IonicModule } from '@ionic/angular';
   templateUrl: './loginscreen.page.html',
   styleUrls: ['./loginscreen.page.scss'],
   standalone: true,
-  imports: [IonInput, IonItem, IonCardContent, IonImg, IonCard, IonBackButton, IonButtons, IonButton, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonicModule]
+  imports: [ IonTitle, CommonModule, FormsModule, IonicModule]
 })
 export class LoginscreenPage implements OnInit {
 
