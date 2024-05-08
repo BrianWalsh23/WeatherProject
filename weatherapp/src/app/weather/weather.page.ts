@@ -4,15 +4,16 @@ import { WeatherService } from '../service/weather.service';
 import{ CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { ReactiveFormsModule } from '@angular/forms';
+import { Browser } from '@capacitor/browser';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-weather',
   templateUrl: './weather.page.html',
   styleUrls: ['./weather.page.scss'],
   standalone: true,
   imports: [CommonModule, IonicModule, ReactiveFormsModule]
 })
-export class AppComponent {
+export class WeatherPage {
   searchForm!: FormGroup;
   public weather: any;
 
@@ -34,4 +35,9 @@ export class AppComponent {
       this.weather = resp.data;
     });
   }
+
+  async openBrowser() {
+    await Browser.open({ url: 'https://www.met.ie/'
+    });
+    };
 }
