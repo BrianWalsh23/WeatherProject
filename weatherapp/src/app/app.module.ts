@@ -10,9 +10,9 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import{AngularFirestore, AngularFirestoreModule} from '@angular/fire/compat/firestore';
 
-import  {AuthService} from 'src/app/auth.service';
-
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
+
+
 
 @NgModule({
   declarations: [
